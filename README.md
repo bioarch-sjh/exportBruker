@@ -23,7 +23,9 @@ The code above does the following:
 
 # Setting up
 
-To set your system up for running this code, all you have to do (once you've installed RStudio or R) is install the `MALDIquantForeign` package. You can check if that's already been done and install it if necessary like this:
+You need to download the files from https://github.com/bioarch-sjh/exportBruker - there's a green button called 'clone or download' on the right-hand side of the page - click on that, choose "Download ZIP", and extract the downloaded zipfile to a conveniet place on your system. 
+
+To set your system up for running the code, all you have to do (once you've installed RStudio or R) is install the `MALDIquantForeign` package. You can check if that's already been done and install it if necessary like this:
 
     require("MALDIquantForeign")
 
