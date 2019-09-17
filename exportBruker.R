@@ -127,11 +127,16 @@ exportDataSetTab <-function(data,txt=TRUE){
 
 
 
-exportDataSetCsv <-function(data){
+exportDataSetCsv <-function(data,path=NA){
 
 	for(i in 1:length(data)){
-		outfn <- sprintf("csv/%s",data[[i]]@metaData$fullName)
-		message("Exporting %s",data[[i]]@metaData$fullName)
+	  if(is.na(path)){
+	    outfn <- sprintf("%s.csv",data[[i]]@metaData$fullName)
+	  }
+    else{
+	    outfn <- sprintf("%s/%s",path,data[[i]]@metaData$fullName)
+    }
+		message(sprintf("Exporting %s to %s",data[[i]]@metaData$fullName,outfn))
 		MALDIquantForeign::exportCsv(data[[i]], file = outfn, force=TRUE, col.names = FALSE)
 	}
 }
