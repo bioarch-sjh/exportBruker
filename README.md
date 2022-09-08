@@ -34,6 +34,14 @@ This will check whether the package is installed or not, and install it for you 
 
 http://web.cs.ucla.edu/~gulzar/rstudio/ shows you how to use RStudio to install the package via the menu bar. 
 
+### Configurations for old versions of R: 
+
+*Here we record combinations of older versions of R, MALDIquant and MALDIquantForeign that work together* 
+
+- R 3.6.3 on Mac OS 10.12; MALDIquant version 1.17; MALDIquantForeign version 0.13
+
+
+
 # Details
 
 ## Paths to the Bruker folder - examples
